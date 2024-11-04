@@ -115,6 +115,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif  ;
     color: #43521a;
     font-size: 66px;
+    margin-top: 20px;
 }
 .main-images{
     display: flex;
