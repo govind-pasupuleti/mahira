@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Mahira Herbal</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="container">
@@ -20,16 +22,12 @@
                     <a href="#home">Home</a>
                     <a href="#aboutus">About Us</a>
                     <div class="dropdown">
-                        <a href="#productcategories">Product Categories</a>
-                        <div class="dropdown-content">
-                            <a href="#products-each">Oils</a>
-                            <a href="#skincare">Skincare</a>
-                            <a href="#others">Others</a>
-                        </div>
+                        <a href="#products-each">Products</a>
+                     
                     </div>
-                    <a href="#offers">Offers</a>
+                    
                 </div>
-                <a href="#buynow" class="navbar-button">Buy Now</a>
+                <a href="https://wa.me/6304449747/?text=Hello%20there!" target="_blank" class="navbar-button">Buy Now</a>
                 <button class="menu-toggle" aria-label="Toggle menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -51,68 +49,109 @@
                 <div class="herbal-description">Herbal oils have been cherished for centuries, dating back to ancient civilizations like Egypt, China, and India. These natural extracts, derived from plants, have been used for their therapeutic and healing properties.</div>
                 <hr class="hr-line"/>
                 <div id="products-each">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="./product2.png" alt="Slide 1">
+                            <div class="text">Neem Oil</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="./pexels-mareefe-932577.jpg" alt="Slide 2">
+                            <div class="text">Bringraj Oil</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3"></div>
+                            <img src="./ecofriendly-beauty-product.jpg" alt="Slide 3">
+                            <div class="text">Coconut Oil</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
                     <section class="product-section">
                         <p class="product-heading">Our Products</p>
                         <div class="product-grid">
                             <div class="product-card">
-                                <img src="./product1.png" alt="Product 1">
-                                <h3>Product 1</h3>
-                                <p>Short description of Product 1.</p>
-                                <button class="product-button">Buy Now</button>
+                                <img src="./product1.png" alt="Product 1" class="products-image">
+                                
+                                <h3> Keshpallav Hair Oil
+                                </h3>
+                                <p>Scientifically proven to reduce hair fall and promote hair growth, enriched with rosemary, castor, amla, brahmi, and bhringraj oil.</p>
+                                <a href="https://wa.me/6304449747/?text=Hello%20there!" target="_blank"><button class="product-button" >Buy Now</button></a>
                             </div>
-                            <div class="product-card">
-                                <img src="./product2.png" alt="Product 2">
-                                <h3>Product 2</h3>
-                                <p>Short description of Product 2.</p>
-                                <button class="product-button">Buy Now</button>
-                            </div>
-                            <div class="product-card">
-                                <img src="./product3.png" alt="Product 3">
-                                <h3>Product 3</h3>
-                                <p>Short description of Product 3.</p>
-                                <button class="product-button">Buy Now</button>
-                            </div>
+                            
+                          
                             <div class="product-card">
                                 <img src="./product4.png" alt="Product 4">
-                                <h3>Product 4</h3>
-                                <p>Short description of Product 4.</p>
-                                <button class="product-button">Buy Now</button>
+                                <h3>Rosemary Hair Oil</h3>
+                                <p>Promotes hair growth, strengthens hair, and fights dandruff, with neem, amla, and bhringraj oil, free from mineral oil.</p>
+                                <a href="https://wa.me/6304449747/?text=Hello%20there!" target="_blank"><button class="product-button" >Buy Now</button></a>
                             </div>
-                            <div class="product-card">
-                                <img src="./product5.png" alt="Product 3">
-                                <h3>Product 3</h3>
-                                <p>Short description of Product 3.</p>
-                                <button class="product-button">Buy Now</button>
-                            </div>
+                         
                             <div class="product-card">
                                 <img src="./product6.png" alt="Product 4">
-                                <h3>Product 4</h3>
-                                <p>Short description of Product 4.</p>
-                                <button class="product-button">Buy Now</button>
-                            </div>
+                                <h3>Hairvel Herbal Hair Oil</h3>
+                                <p>A blend of pure coconut oil and handpicked natural herbs from Kerala, revitalizing hair, promoting strength, shine, and overall hair health.</p>
+                                <a href="https://wa.me/6304449747/?text=Hello%20there!" target="_blank"><button class="product-button" >Buy Now</button></a>                            </div>
                             <div class="product-card">
                                 <img src="./product7.png" alt="Product 3">
-                                <h3>Product 3</h3>
-                                <p>Short description of Product 3.</p>
-                                <button class="product-button">Buy Now</button>
+                                <h3>Scalptone Grey Hair Serum</h3>
+                                <p>Clinically proven to fight premature greying of hair, enriched with hyaluronic acid and caffeine.</p>
+                                <a href="https://wa.me/6304449747/?text=Hello%20there!" target="_blank"><button class="product-button" >Buy Now</button></a>
                             </div>
-                            <div class="product-card">
-                                <img src="./product8.png" alt="Product 4">
-                                <h3>Product 4</h3>
-                                <p>Short description of Product 4.</p>
-                                <button class="product-button">Buy Now</button>
-                            </div>
+                        
                         </div>
                     </section>
+                    
                 </div>
+                <hr class="hr-line"/>
+               
+               
+                <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-section">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/MAHIRAHAIROIL" target="_blank">Instagram</a>
+                                <a href="https://youtube.com/@mahiraherbalhairoil?si=4BBZ9b6ir-osxE0Y" target="_blank">YouTube</a>
+                                <a href="https://www.facebook.com/MAHIRAHAIROIL" target="_blank">Facebook</a>
+                            </div>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Contact Us</h4>
+                            <a href="mailto:info@herbalhairoil.com">info@herbalhairoil.com</a>
+                            <a href="https://wa.me/6304449747/?text=Hello%20there!" target="_blank">Whatsapp Number : 6304449747</a>
+                            <p>For bulk orders, contact us via email.</p>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Additional Information</h4>
+                            <a href="#privacy">Privacy Policy</a>
+                            <a href="#terms">Terms of Service</a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        &copy; 2024 Herbal Hair Oil. All rights reserved.
+                    </div>
+                </footer>
             </div>
 
+
         </div>
+        
     
  
 
 
     </div>
+    
  
 
 

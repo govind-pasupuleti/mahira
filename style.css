@@ -231,3 +231,244 @@ body {
     border: 1px solid #31511E;
     margin-top: 30px;
 }
+.products-image{
+    height: 200px;
+    width: 200px;
+}
+.footer {
+    background-color: #1A1A19; /* Dark background */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-section {
+    margin: 20px;
+}
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: #859F3D; /* Olive Green */
+}
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+.footer-section a:hover {
+    color: #F6FCDF; /* Pale Yellow */
+}
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    color: #bbb; /* Light Grey */
+}
+@media (max-width: 600px) {
+    .footer-section {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #F6FCDF;
+    color: #1A1A19;
+}
+.slideshow-container {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.mySlides img {
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.text {
+    color: #1A1A19;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #31511E;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+@media (max-width: 768px) {
+    .slideshow-container {
+        width: 90%;
+        height: auto;
+    }
+    .mySlides img {
+        width: 100%;
+        height: auto;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .prev, .next {
+        font-size: 14px;
+    }
+}
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.text {
+    color: #1A1A19;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 0}
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #31511E;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+@media (max-width: 768px) {
+    .slideshow-container {
+        width: 90%;
+        height: auto;
+    }
+    .mySlides img {
+        width: 100%;
+        height: auto;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .prev, .next {
+        font-size: 14px;
+    }
+}
