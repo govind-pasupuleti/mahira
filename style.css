@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F6FCDF; /* Pale Yellow Background */
+    color: #1A1A19; /* Dark Grey Text */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1A1A19; /* Dark Grey Background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+}
+.navbar-menu a:hover {
+    color: #859F3D; /* Olive Green Hover Effect */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #1A1A19; /* Dark Grey Text */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.navbar-button {
+    background-color: #859F3D; /* Olive Green Button */
+    color: #1A1A19; /* Dark Grey Text */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.navbar-button:hover {
+    color: white; /* Change text color to white on hover */
+    background-color: #859F3D; /* Ensure background color remains the same */
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    cursor: pointer;
+}
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-menu a {
+        margin: 10px 0;
+    }
+    .navbar-menu.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}
+.main-section{
+    height: 100vh;
+
+}
+.main-heading{
+    font-weight: bolder;
+    text-align: center;
+    padding: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif  ;
+    color: #43521a;
+    font-size: 66px;
+}
+.main-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.image-1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./Screenshot\ 2024-11-04\ 142925.png);
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    align-self: center;
+
+}
+.image-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+}
+.image-3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./mahira.png);
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    align-self: center;
+}
+.small-images{
+    height: 290px;
+    width: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./pexels-tree-of-life-seeds-1708680-3259600.jpg);
+    margin: 10px;
+    border-radius: 20px;
+}
+.small-images2{
+    height: 290px;
+    width: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./pexels-mareefe-932577.jpg);
+    margin: 10px;
+    border-radius: 20px;
+}
+.herbal-description{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 35px;
+    padding: 60px;
+    word-spacing: 4px;
+}
+.product-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+.product-card h3 {
+    color: #31511E; /* Dark Green */
+    margin: 15px 0 10px;
+}
+.product-card p {
+    color: #666; /* Grey */
+}
+.product-button {
+    background-color: #859F3D; /* Olive Green Button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.product-button:hover {
+    background-color: #31511E; /* Dark Green Background */
+}
+.product-heading{
+    font-weight: bolder;
+    font-size: 70px;
+}
+.hr-line{
+    width: 80%;
+    border: 1px solid #31511E;
+    margin-top: 30px;
+}
